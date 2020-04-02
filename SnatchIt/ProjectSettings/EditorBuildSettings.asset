@@ -11,12 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Adam Test Scenes/Options Menu/Options Menu.unity
     guid: 6a268454c14994d4fbcc4102f44b3cbf
-  - enabled: 1
-    path: Assets/Scenes/Adam Test Scenes/Options Menu/Controls Menu.unity
-    guid: c2ecccfdf6c094e458949ac9b0aa1cd7
-  - enabled: 1
-    path: Assets/Scenes/Adam Test Scenes/Options Menu/Audio Menu.unity
-    guid: 3e5982d589646a943adfdfd3b6366627
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Game Scene.unity
     guid: 2d9706d074279fc4183960568910f43a
