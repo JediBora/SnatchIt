@@ -1964,12 +1964,12 @@ PrefabInstance:
     - target: {fileID: 3100579446781588285, guid: b29a4eeca9d985c4a96d5f98e9128f17,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.31288
+      value: 5.21
       objectReference: {fileID: 0}
     - target: {fileID: 3100579446781588285, guid: b29a4eeca9d985c4a96d5f98e9128f17,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.004
+      value: -5.25
       objectReference: {fileID: 0}
     - target: {fileID: 3100579446781588285, guid: b29a4eeca9d985c4a96d5f98e9128f17,
         type: 3}
@@ -2042,6 +2042,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2999331921862764721, guid: a91455d7609cd1a47adefe6117ee4dec,
         type: 3}
+    - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
+        type: 3}
+      propertyPath: vision
+      value: 
+      objectReference: {fileID: 1797294168}
+    - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
+        type: 3}
+      propertyPath: threat
+      value: 
+      objectReference: {fileID: 618654977}
     m_RemovedComponents:
     - {fileID: 3100579446781588283, guid: b29a4eeca9d985c4a96d5f98e9128f17, type: 3}
     - {fileID: 3100579446781588284, guid: b29a4eeca9d985c4a96d5f98e9128f17, type: 3}
@@ -2465,10 +2475,9 @@ GameObject:
   - component: {fileID: 618654986}
   - component: {fileID: 618654985}
   - component: {fileID: 618654990}
-  - component: {fileID: 618654989}
   m_Layer: 0
   m_Name: 'Enemy '
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2493,7 +2502,7 @@ MonoBehaviour:
   - {fileID: 2054760116}
   patrolSpeed: 30
   chaseSpeed: 1
-  threat: {fileID: 0}
+  threat: {fileID: 719447202}
 --- !u!50 &618654979
 Rigidbody2D:
   serializedVersion: 4
@@ -2525,7 +2534,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2659,11 +2668,11 @@ MonoBehaviour:
   m_StateName: EnemyChase
   m_Color: 0
   m_HideScript: 1
-  m_Position: {x: 980, y: 70}
+  m_Position: {x: 960, y: 90}
   m_Transitions:
   - m_Destination: {fileID: 618654986}
     m_EventID: 186463275
-  m_CachedInstanceID: 39212
+  m_CachedInstanceID: 14800
   threat: {fileID: 719447202}
   visionScript: {fileID: 652503525}
 --- !u!114 &618654986
@@ -2683,16 +2692,19 @@ MonoBehaviour:
   m_StateName: EnemyPatrol
   m_Color: 0
   m_HideScript: 1
-  m_Position: {x: 780, y: 70}
+  m_Position: {x: 760, y: 70}
   m_Transitions:
   - m_Destination: {fileID: 618654985}
     m_EventID: 1869886699
-  m_CachedInstanceID: 39214
+  - m_Destination: {fileID: 618654990}
+    m_EventID: 1302165058
+  m_CachedInstanceID: 14802
   points:
   - {fileID: 999772225}
   - {fileID: 749810137}
   - {fileID: 2054760116}
   visionScript: {fileID: 652503525}
+  characterScript: {fileID: 719447205}
 --- !u!114 &618654987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2712,12 +2724,12 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: 39216
+  m_CachedInstanceID: 14804
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
-  m_StartState: {fileID: 618654990}
-  m_AnyState: {fileID: 618654989}
+  m_StartState: {fileID: 618654986}
+  m_AnyState: {fileID: 0}
   m_ConcurrentState: {fileID: 0}
 --- !u!114 &618654988
 MonoBehaviour:
@@ -2757,34 +2769,11 @@ MonoBehaviour:
     m_IsConstant: 0
     m_IsSystem: 0
   - m_ID: 1302165058
-    m_Name: Invetigate
+    m_Name: Investigate
     m_Blackboard: {fileID: 618654988}
     m_IsConstant: 0
     m_IsSystem: 0
   m_Namespace: 
---- !u!114 &618654989
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 618654977}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bdb8748b26054306807051b76ae92dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Blackboard: {fileID: 618654988}
-  m_Parent: {fileID: 618654987}
-  m_StateName: AnyState
-  m_Color: 0
-  m_HideScript: 1
-  m_Position: {x: 800, y: -50}
-  m_Transitions:
-  - m_Destination: {fileID: 618654990}
-    m_EventID: 1302165058
-  m_CachedInstanceID: -30112
-  m_CanTransitionToSelf: 0
 --- !u!114 &618654990
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2802,14 +2791,13 @@ MonoBehaviour:
   m_StateName: EnemyInvestigate
   m_Color: 0
   m_HideScript: 1
-  m_Position: {x: 980, y: -60}
+  m_Position: {x: 960, y: 10}
   m_Transitions:
-  - m_Destination: {fileID: 618654985}
-    m_EventID: 1869886699
   - m_Destination: {fileID: 618654986}
     m_EventID: 186463275
-  m_CachedInstanceID: -30094
+  m_CachedInstanceID: 14810
   script: {fileID: 719447205}
+  changeState: 0
 --- !u!1 &622290378
 GameObject:
   m_ObjectHideFlags: 0
@@ -7081,6 +7069,70 @@ Transform:
   m_Father: {fileID: 1166040531}
   m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1797294165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1797294166}
+  - component: {fileID: 1797294168}
+  - component: {fileID: 1797294167}
+  m_Layer: 0
+  m_Name: PlayerVision
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1797294166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797294165}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 719447210}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1797294167
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797294165}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 10
+--- !u!114 &1797294168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797294165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 676a61f0b76d12a4db48ec83a6e923ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  owner: {fileID: 719447202}
+  threatTag: Enemy
+  script: {fileID: 719447205}
+  enemySeen: 0
 --- !u!1 &1802739691
 GameObject:
   m_ObjectHideFlags: 0

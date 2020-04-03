@@ -8,6 +8,8 @@ public class EnemyInvestigate : StateBehaviour
     private NavMeshAgent2D agent;
     //public List<GameObject> whistles;
     public CharacterController script;
+    public bool changeState = false;
+
     private void Start()
     {
         agent = GetComponent<NavMeshAgent2D>();
@@ -27,48 +29,46 @@ public class EnemyInvestigate : StateBehaviour
     // Update is called once per frame
     void Update()
     {
-        for (int i = script.whistles.Count - 1; i >= 0; i--)
+
+
+        if (script.whistles.Count > 0)
         {
-            GameObject objectInVolume = script.whistles[i];
-
-            // if object has been disabled or deleted, remove it from both lists
-            if (objectInVolume == null || !objectInVolume.activeSelf)
-            {
-                
-                    LostSight(objectInVolume);
-                    script.whistles.Remove(objectInVolume);
-                    
-                    continue;
-                
-            }
-
-            if (script.whistles.Count > 0)
-            {
-                agent.destination = GameObject.Find("WhistleLocation(Clone)").transform.position;
-                //cript.whistles.Remove(script.whistle);
-                //Destroy(GameObject.Find("WhistleLocation(Clone)"),4f);
-
-            }
-            //if (Input.GetKey(KeyCode.V))
-            //{
-            //    LostSight(script.whistle);
-            //    script.whistles.Remove(script.whistle);
-            //}
+            agent.destination = GameObject.Find("WhistleLocation(Clone)").transform.position;
+            //cript.whistles.Remove(script.whistle);
+            //Destroy(GameObject.Find("WhistleLocation(Clone)"),4f);
 
         }
-    }
-    void LostSight(GameObject other)
-    {
-        if (script.whistles.Contains(other))
+
+        if (script.whistles.Count == 0)
         {
-            script.whistles.Remove(other);
+            SendEvent("Patrol");
+
+        }
+
+
+    }
+    public void LostSight()
+    {
+        if (script.whistles.Contains(script.whistle))
+        {
+            script.whistles.Remove(script.whistle);
+            //owner.SendMessage(visionExitMessage, other, SendMessageOptions.DontRequireReceiver);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Whistle") 
+
+        if (collision.gameObject.tag == "Whistle")
         {
+            //script.whistle = null;
+            // script.whistles.Remove(script.whistle);
+           // LostSight();
             Destroy(GameObject.Find("WhistleLocation(Clone)"));
+            changeState = true;
+            print("test");
+
+
+
         }
     }
 }
