@@ -54,12 +54,17 @@ public class CharacterController : MonoBehaviour
 
     void Whistle()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            source2.Play();
+        }
         if (Input.GetKeyDown(KeyCode.R) && vision.enemySeen)
         {
+            
             whistles.Add(whistle);
             whistle = Instantiate(whistlePrefab, transform.position, Quaternion.identity) as GameObject;
             //whistleData.Play(1);
-            source2.Play();
+            
         }
     }
 
