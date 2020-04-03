@@ -29,6 +29,8 @@ public class CharacterController : MonoBehaviour
         {
             audioData.Stop();
         }
+
+        Whistle();
     }
 
     void FixedUpdate()
@@ -36,5 +38,12 @@ public class CharacterController : MonoBehaviour
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
     }
 
-    
+    void Whistle()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            
+        }
+
+    }
 }
