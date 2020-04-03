@@ -5,6 +5,9 @@ using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
     AudioSource audioData;
+    AudioSource whistleData;
+    public AudioSource source1;
+    public AudioSource source2;
     public float speed;
     Rigidbody2D rb;
     Vector2 movement;
@@ -20,6 +23,7 @@ public class CharacterController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         audioData = GetComponent<AudioSource>();
+        whistleData = GetComponent<AudioSource>();
         whistles = new List<GameObject>();
     }
     private void Update()
@@ -30,12 +34,14 @@ public class CharacterController : MonoBehaviour
         if (Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical"))
         {
             Debug.Log("Sound off!");
-            audioData.Play();
+            //audioData.Play(0);
+            source1.Play();
         }
 
         if (Input.GetButtonUp("Horizontal") || Input.GetButtonUp("Vertical"))
         {
-            audioData.Stop();
+            //audioData.Stop();
+            source1.Stop();
         }
 
         Whistle();
@@ -52,7 +58,8 @@ public class CharacterController : MonoBehaviour
         {
             whistles.Add(whistle);
             whistle = Instantiate(whistlePrefab, transform.position, Quaternion.identity) as GameObject;
-
+            //whistleData.Play(1);
+            source2.Play();
         }
     }
 

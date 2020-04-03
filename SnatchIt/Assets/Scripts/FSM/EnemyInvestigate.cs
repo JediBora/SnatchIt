@@ -9,6 +9,7 @@ public class EnemyInvestigate : StateBehaviour
     //public List<GameObject> whistles;
     public CharacterController script;
     public bool changeState = false;
+    public AudioSource alertSound;
 
     private void Start()
     {
@@ -62,7 +63,8 @@ public class EnemyInvestigate : StateBehaviour
         {
             //script.whistle = null;
             // script.whistles.Remove(script.whistle);
-           // LostSight();
+            // LostSight();
+            alertSound.Play();
             Destroy(GameObject.Find("WhistleLocation(Clone)"));
             changeState = true;
             print("test");

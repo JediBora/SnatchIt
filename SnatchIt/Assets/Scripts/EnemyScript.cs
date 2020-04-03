@@ -14,6 +14,7 @@ public class EnemyScript : MonoBehaviour
 
     public State state;
 
+    
 
     public Transform[] points;
     private int destPoint = 0;
@@ -53,11 +54,12 @@ public class EnemyScript : MonoBehaviour
     void Patrol()
     {
         MoveTowardWaypoint();
-
+        
     }
 
     void Chase()
     {
+        
         MoveTowardThreat();
     }
 
@@ -69,10 +71,8 @@ public class EnemyScript : MonoBehaviour
 
     void MoveTowardThreat()
     {
-
-
         agent.destination = threat.transform.position;
-
+        
 
     }
 
@@ -99,6 +99,7 @@ public class EnemyScript : MonoBehaviour
     void OnVisionEnter(Collider2D other)
     {
         threat = other.gameObject;
+        
         state = State.Chasing;
     }
 
