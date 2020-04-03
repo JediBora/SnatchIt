@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour
     
     public void Play()
     {
-        SceneManager.LoadScene("Game Scene"); // loads game scene
+        SceneManager.LoadScene("LevelDesign"); // loads game scene
 
     }
 
@@ -32,7 +32,7 @@ public class MainMenu : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene("Game Scene"); // loads game scene
+        SceneManager.LoadScene("LevelDesign"); // loads game scene
 
     }
 
