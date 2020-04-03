@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3100579446781588281}
   - component: {fileID: 3100579446781588280}
   - component: {fileID: 3100579446781588286}
+  - component: {fileID: 2973417068989593360}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -92,7 +93,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -141,7 +142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bca4a140562489f4fbec886056b3233b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 2
+  whistle: {fileID: 2999331921862764721, guid: a91455d7609cd1a47adefe6117ee4dec, type: 3}
 --- !u!82 &3100579446781588286
 AudioSource:
   m_ObjectHideFlags: 0
@@ -238,3 +240,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!58 &2973417068989593360
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3100579446781588279}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 5

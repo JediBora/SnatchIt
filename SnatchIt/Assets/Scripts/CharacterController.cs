@@ -8,11 +8,16 @@ public class CharacterController : MonoBehaviour
     public float speed;
     Rigidbody2D rb;
     Vector2 movement;
+    //public NavMeshAgent2D agent;
+    public GameObject whistlePrefab;
+     public GameObject whistle;
+    public List <GameObject> whistles;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         audioData = GetComponent<AudioSource>();
+        whistles = new List<GameObject>();
     }
     private void Update()
     {
@@ -42,7 +47,9 @@ public class CharacterController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            
+            whistle = Instantiate(whistlePrefab,transform.position,Quaternion.identity);
+            whistles.Add(whistle);
+
         }
 
     }

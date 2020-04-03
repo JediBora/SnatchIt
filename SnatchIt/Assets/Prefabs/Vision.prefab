@@ -89,6 +89,7 @@ MonoBehaviour:
   visibleObjects: []
   seeableTags:
   - Player
+  - Whistle
   debugOccludedColor: {r: 1, g: 0, b: 0, a: 1}
   debugSightColor: {r: 0, g: 1, b: 1, a: 1}
   visionEnterMessage: OnVisionEnter
