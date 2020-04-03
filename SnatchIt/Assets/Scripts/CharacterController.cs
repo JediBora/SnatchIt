@@ -66,4 +66,12 @@ public class CharacterController : MonoBehaviour
     {
         threat = null;
     }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if(collision.gameObject.tag == "Object") 
+    //    {
+        
+        
+    //    }
+    //}
 }

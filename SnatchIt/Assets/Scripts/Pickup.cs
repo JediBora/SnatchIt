@@ -22,15 +22,16 @@ public class Pickup : MonoBehaviour
             PickupItem();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name.Equals("Player"))
         {
+            print("test");
             pickUpAllowed = true;
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.name.Equals("Player"))
         {
