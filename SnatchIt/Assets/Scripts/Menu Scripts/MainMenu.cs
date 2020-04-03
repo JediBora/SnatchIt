@@ -32,7 +32,7 @@ public class MainMenu : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene("ForestScene"); // loads game scene
+        SceneManager.LoadScene("Game Scene"); // loads game scene
 
     }
 
