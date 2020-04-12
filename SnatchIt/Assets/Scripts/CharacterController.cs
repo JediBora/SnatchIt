@@ -23,8 +23,6 @@ public class CharacterController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        audioData = GetComponent<AudioSource>();
-        whistleData = GetComponent<AudioSource>();
         whistles = new List<GameObject>();
 
         

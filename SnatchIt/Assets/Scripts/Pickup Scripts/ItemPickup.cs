@@ -10,7 +10,7 @@ public class ItemPickup : MonoBehaviour
     private Text itemCounter;
 
     private int collidedItemValue;
-
+    public AudioSource source3;
     private int moneyAmount;
 
     // Start is called before the first frame update
@@ -32,7 +32,7 @@ public class ItemPickup : MonoBehaviour
             collidedItemValue = collision.gameObject.GetComponent<Item>().itemValue;
 
             moneyAmount += collidedItemValue;
-
+            source3.Play();
             Destroy(collision.gameObject);
         }
     }
