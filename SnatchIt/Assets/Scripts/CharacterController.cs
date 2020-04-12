@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterController : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class CharacterController : MonoBehaviour
         audioData = GetComponent<AudioSource>();
         whistleData = GetComponent<AudioSource>();
         whistles = new List<GameObject>();
+
+        
     }
     private void Update()
     {
@@ -45,6 +48,7 @@ public class CharacterController : MonoBehaviour
         }
 
         Whistle();
+
     }
 
     void FixedUpdate()
@@ -78,12 +82,5 @@ public class CharacterController : MonoBehaviour
     {
         threat = null;
     }
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if(collision.gameObject.tag == "Object") 
-    //    {
-        
-        
-    //    }
-    //}
+
 }
