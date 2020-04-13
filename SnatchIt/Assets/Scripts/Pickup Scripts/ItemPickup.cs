@@ -7,16 +7,19 @@ public class ItemPickup : MonoBehaviour
 {
     [SerializeField]
 
-    private Text itemCounter;
+    public Text itemCounter;
 
     private int collidedItemValue;
     public AudioSource source3;
-    private int moneyAmount;
+    public int moneyAmount = 0;
     public string grabInput;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        moneyAmount = 0;
+
+        //moneyAmount = 0;
     }
 
     // Update is called once per frame
@@ -34,6 +37,15 @@ public class ItemPickup : MonoBehaviour
             moneyAmount += collidedItemValue;
             source3.Play();
             Destroy(collision.gameObject);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Enemy"))
+        {
+            Debug.Log("Works");
+            moneyAmount = moneyAmount - 10;
         }
     }
 }

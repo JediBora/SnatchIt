@@ -1,114 +1,85 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyScript : MonoBehaviour
 {
-    public Vision visionScript;
-    public enum State
-    {
-        Patrolling,
-        Attacking,
-        Chasing
-    }
 
-    public State state;
+    [Header("Canvas UI")]
+    public GameObject player1Canvas;
+    public GameObject player2Canvas;
 
-    
+    [Header("Players")]
+    public CharacterController player1;
+    public CharacterController player2;
 
-    public Transform[] points;
-    private int destPoint = 0;
-  
-    public float patrolSpeed;
-    public float chaseSpeed;
+    [Header("Floats")]
+    public float jailTime = 2;
 
-    public GameObject threat;
+    [Header("Bools")]
+    public bool player1Caught = false;
+    public bool player2Caught = false;
 
-    private NavMeshAgent2D agent;
+    [Header("Locations")]
+    public Transform spawn;
+
+    [Header("Scripts")]
+    public Text itemPickupText; 
+    public Text itemPickupText1;
+    public ItemPickup itemPickupScript; 
+    public ItemPickup itemPickupScript1;
     // Start is called before the first frame update
     void Start()
     {
-        agent = GetComponent<NavMeshAgent2D>();
-        Patrol();
+        //itemPickupScript = GetComponent<ItemPickup>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!agent.pathPending && agent.remainingDistance < 0.5f)
-            Patrol();
 
-        switch (state)
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
         {
-            case State.Patrolling:
-                Patrol();
-                break;
-            case State.Attacking:
-                Attacking();
-                break;
-            case State.Chasing:
-                Chase();
-                break;
+            player1Canvas.SetActive(true);
+            player1.enabled = false;
+            player1Caught = true;
+            //itemPickupText.text = "$" + (itemPickupScript.moneyAmount - 10);
+            StartCoroutine(SpawnPlayer());
+        }
+        if (collision.gameObject.tag == "Player2")
+        {
+            player2Canvas.SetActive(true);
+            player2.enabled = false;
+            player2Caught = true;
+           // itemPickupText1.text = "$" + (itemPickupScript1.moneyAmount - 10);
+            StartCoroutine(SpawnPlayer());
         }
     }
-    void Patrol()
+    IEnumerator SpawnPlayer()
     {
-        MoveTowardWaypoint();
-        
-    }
+        yield return new WaitForSeconds(jailTime);
+        if (player1Caught)
+        {
+           
+            player1.transform.position = spawn.position;
+            player1Canvas.SetActive(false);
+            player1.enabled = true;
+            player1Caught = false;
 
-    void Chase()
-    {
-        
-        MoveTowardThreat();
-    }
+        }
+        if (player2Caught)
+        {
+           
+            player2.transform.position = spawn.position;
+            player2Canvas.SetActive(false);
+            player2.enabled = true;
+            player2Caught = false;
+        }
 
-    void Attacking()
-    {
-        //RegenerateEnergy();
-    }
-
-
-    void MoveTowardThreat()
-    {
-        agent.destination = threat.transform.position;
-        
-
-    }
-
-    void MoveTowardWaypoint()
-    {
-
-        // Returns if no points have been set up
-        if (points.Length == 0)
-            return;
-
-        // Set the agent to go to the currently selected destination.
-        agent.destination = points[destPoint].position;
-
-        // Choose the next point in the array as the destination,
-        // cycling to the start if necessary.
-        destPoint = (destPoint + 1) % points.Length;
-
-        //transform.position = Vector3.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, patrolSpeed * Time.deltaTime);
-    }
-
-
-
-
-    void OnVisionEnter(Collider2D other)
-    {
-        threat = other.gameObject;
-        
-        state = State.Chasing;
-    }
-
-
-
-    void OnVisionExit(Collider2D other)
-    {
-        Debug.Log("Lost Player!!!!");
-        state = State.Patrolling;
-        threat = null;
     }
 }
