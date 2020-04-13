@@ -9,6 +9,7 @@ TagManager:
   - Item
   - Walls
   - Player2
+  - Generator
   layers:
   - Default
   - TransparentFX

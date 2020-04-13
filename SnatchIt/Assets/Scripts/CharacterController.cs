@@ -5,9 +5,12 @@ using UnityEngine.UI;
 
 public class CharacterController : MonoBehaviour
 {
-    [Header("Audio")]
+
+    
     AudioSource audioData;
     AudioSource whistleData;
+
+    [Header("Audio")]
     public AudioSource source1;
     public AudioSource source2;
 
@@ -30,13 +33,13 @@ public class CharacterController : MonoBehaviour
 
     [Header("SeeThroughWalls")]
     public Shader baseShader;
-    public Shader fadeShader;
+    
     //public string threatTag;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         whistles = new List<GameObject>();
-
+        GetComponent<Renderer>().material.shader = baseShader;
 
     }
     private void Update()

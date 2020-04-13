@@ -12,7 +12,7 @@ public class ItemPickup : MonoBehaviour
     private int collidedItemValue;
     public AudioSource source3;
     private int moneyAmount;
-
+    public string grabInput;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +27,7 @@ public class ItemPickup : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (Input.GetKeyDown("space") && collision.gameObject.tag.Equals("Item"))
+        if (Input.GetButtonDown(grabInput) && collision.gameObject.tag.Equals("Item"))
         {
             collidedItemValue = collision.gameObject.GetComponent<Item>().itemValue;
 

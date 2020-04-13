@@ -142,8 +142,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bca4a140562489f4fbec886056b3233b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  source1: {fileID: 0}
+  source2: {fileID: 0}
   speed: 2
+  whistlePrefab: {fileID: 0}
   whistle: {fileID: 2999331921862764721, guid: a91455d7609cd1a47adefe6117ee4dec, type: 3}
+  whistles: []
+  threat: {fileID: 0}
+  vision: {fileID: 0}
+  horizontalAxis: Horizontal
+  verticalAxis: Vertical
+  whistleInput: Fire1
+  baseShader: {fileID: 0}
 --- !u!82 &3100579446781588286
 AudioSource:
   m_ObjectHideFlags: 0

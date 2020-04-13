@@ -61,7 +61,7 @@ public class Vision : MonoBehaviour
         if (visibleObjects.Contains(other))
         {
             visibleObjects.Remove(other);
-            owner.SendMessage(visionExitMessage, other, SendMessageOptions.DontRequireReceiver);
+            //owner.SendMessage(visionExitMessage, other, SendMessageOptions.DontRequireReceiver);
         }
     }
 
