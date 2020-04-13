@@ -10,7 +10,8 @@ public class EnemyPatrol : StateBehaviour
     private int destPoint = 0;
     private NavMeshAgent2D agent;
     public Vision visionScript;
-    public CharacterController characterScript;
+    public CharacterController characterScriptPlayer1;
+    public CharacterController characterScriptPlayer2;
     private void Start()
     {
         agent = GetComponent<NavMeshAgent2D>();
@@ -41,7 +42,7 @@ public class EnemyPatrol : StateBehaviour
         {
             SendEvent("Chase");
         }
-        if (characterScript.whistles.Count > 0) 
+        if (characterScriptPlayer1.whistles.Count > 0 || characterScriptPlayer2.whistles.Count > 0) 
         {
             SendEvent("Investigate");
         }

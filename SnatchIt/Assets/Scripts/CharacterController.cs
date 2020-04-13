@@ -5,41 +5,53 @@ using UnityEngine.UI;
 
 public class CharacterController : MonoBehaviour
 {
+    [Header("Audio")]
     AudioSource audioData;
     AudioSource whistleData;
     public AudioSource source1;
     public AudioSource source2;
+
+    [Header("Movement")]
     public float speed;
     Rigidbody2D rb;
     Vector2 movement;
-    public NavMeshAgent2D agent;
+
+    [Header("AI")]
     public GameObject whistlePrefab;
     public GameObject whistle;
     public List<GameObject> whistles;
     public GameObject threat;
     public PlayerVision vision;
 
+    [Header("Inputs")]
+    public string horizontalAxis;
+    public string verticalAxis;
+    public string whistleInput;
+
+    [Header("SeeThroughWalls")]
+    public Shader baseShader;
+    public Shader fadeShader;
     //public string threatTag;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         whistles = new List<GameObject>();
 
-        
+
     }
     private void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        movement.x = Input.GetAxisRaw(horizontalAxis);
+        movement.y = Input.GetAxisRaw(verticalAxis);
 
-        if (Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical"))
+        if (Input.GetAxisRaw(horizontalAxis) > 0 || Input.GetAxisRaw(horizontalAxis) < 0 || Input.GetAxisRaw(verticalAxis) > 0 || Input.GetAxisRaw(verticalAxis) < 0)
         {
             Debug.Log("Sound off!");
             //audioData.Play(0);
             source1.Play();
         }
 
-        if (Input.GetButtonUp("Horizontal") || Input.GetButtonUp("Vertical"))
+        if (Input.GetAxisRaw(horizontalAxis) == 0 || Input.GetAxisRaw(verticalAxis) == 0)
         {
             //audioData.Stop();
             source1.Stop();
@@ -56,29 +68,19 @@ public class CharacterController : MonoBehaviour
 
     void Whistle()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetButtonDown(whistleInput))
         {
             source2.Play();
         }
-        if (Input.GetKeyDown(KeyCode.R) && vision.enemySeen)
+        if (Input.GetButtonDown(whistleInput) && vision.enemySeen)
         {
-            
+
             whistles.Add(whistle);
             whistle = Instantiate(whistlePrefab, transform.position, Quaternion.identity) as GameObject;
             //whistleData.Play(1);
-            
+
         }
     }
-
-    //void OnWhistleEnter(Collider2D other)
-    //{
-        
-    //    threat = other.gameObject;
-
-    //}
-    //void OnWhistleExit(Collider2D other)
-    //{
-    //    threat = null;
-    //}
+   
 
 }

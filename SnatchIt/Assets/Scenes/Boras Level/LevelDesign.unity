@@ -207,7 +207,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 21
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &7834520
 BoxCollider2D:
@@ -249,7 +249,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &21087707
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,7 +281,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 25
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &21087709
 BoxCollider2D:
@@ -322,7 +323,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &21493215
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,7 +355,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &21493217
 BoxCollider2D:
@@ -395,7 +397,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &28064070
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,7 +486,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &48481376
 BoxCollider2D:
@@ -525,7 +528,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &59606635
 GameObject:
   m_ObjectHideFlags: 0
@@ -1321,7 +1325,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 22
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &217623204
 BoxCollider2D:
@@ -1363,7 +1367,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &219528680
 GameObject:
   m_ObjectHideFlags: 0
@@ -1686,7 +1691,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 38
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &253931126
 BoxCollider2D:
@@ -1728,7 +1733,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &262622167
 GameObject:
   m_ObjectHideFlags: 0
@@ -1816,7 +1822,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 31
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &265867099
 BoxCollider2D:
@@ -1858,7 +1864,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &267880782
 GameObject:
   m_ObjectHideFlags: 0
@@ -2086,79 +2093,6 @@ Transform:
   m_Father: {fileID: 1166040531}
   m_RootOrder: 76
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &308778535
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 308778536}
-  - component: {fileID: 308778537}
-  - component: {fileID: 308778538}
-  m_Layer: 0
-  m_Name: GameObject (99)
-  m_TagString: Walls
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &308778536
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 308778535}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.8569994, y: -3.4810002, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2136273883}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &308778537
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 308778535}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.73281, y: -0.33360016}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.554203, y: 0.3112414}
-  m_EdgeRadius: 0
---- !u!114 &308778538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 308778535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce73449553de1a745a658e0ac433306e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
-  fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
 --- !u!1 &338838528
 GameObject:
   m_ObjectHideFlags: 0
@@ -2312,7 +2246,7 @@ PrefabInstance:
     - target: {fileID: 3100579446781588279, guid: b29a4eeca9d985c4a96d5f98e9128f17,
         type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Player2
       objectReference: {fileID: 0}
     - target: {fileID: 3100579446781588279, guid: b29a4eeca9d985c4a96d5f98e9128f17,
         type: 3}
@@ -2327,7 +2261,7 @@ PrefabInstance:
     - target: {fileID: 3100579446781588285, guid: b29a4eeca9d985c4a96d5f98e9128f17,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.68
+      value: 5.19
       objectReference: {fileID: 0}
     - target: {fileID: 3100579446781588285, guid: b29a4eeca9d985c4a96d5f98e9128f17,
         type: 3}
@@ -2475,6 +2409,51 @@ PrefabInstance:
       propertyPath: source2
       value: 
       objectReference: {fileID: 478936666}
+    - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
+        type: 3}
+      propertyPath: horizontalAxis
+      value: Horizontal1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
+        type: 3}
+      propertyPath: verticalAxis
+      value: Vertical1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
+        type: 3}
+      propertyPath: whistleInput
+      value: Fire2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
+        type: 3}
+      propertyPath: fadeShader.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
+        type: 3}
+      propertyPath: fadeShader.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
+        type: 3}
+      propertyPath: fadeShader.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
+        type: 3}
+      propertyPath: fadeShader.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
+        type: 3}
+      propertyPath: baseShader
+      value: 
+      objectReference: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
+    - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
+        type: 3}
+      propertyPath: fadeShader
+      value: 
+      objectReference: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
     - target: {fileID: 3100579446781588286, guid: b29a4eeca9d985c4a96d5f98e9128f17,
         type: 3}
       propertyPath: Loop
@@ -2698,7 +2677,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 26
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &410094906
 BoxCollider2D:
@@ -2740,7 +2719,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &417205800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2969,79 +2949,6 @@ Transform:
   m_Father: {fileID: 1166040531}
   m_RootOrder: 87
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &429462112
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 429462113}
-  - component: {fileID: 429462114}
-  - component: {fileID: 429462115}
-  m_Layer: 0
-  m_Name: GameObject (121)
-  m_TagString: Walls
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &429462113
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429462112}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.94799995, y: -4.4370003, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2136273883}
-  m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &429462114
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429462112}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.25218767, y: -0.33360016}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.3114394, y: 0.3112414}
-  m_EdgeRadius: 0
---- !u!114 &429462115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429462112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce73449553de1a745a658e0ac433306e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
-  fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
 --- !u!1 &431076700
 GameObject:
   m_ObjectHideFlags: 0
@@ -3171,7 +3078,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &433329759
 GameObject:
   m_ObjectHideFlags: 0
@@ -3531,7 +3439,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &452784995
 BoxCollider2D:
@@ -3573,7 +3481,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &458417678
 GameObject:
   m_ObjectHideFlags: 0
@@ -3839,7 +3748,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &469141635
 BoxCollider2D:
@@ -3881,7 +3790,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1001 &471329569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4535,6 +4445,51 @@ PrefabInstance:
       propertyPath: source2
       value: 
       objectReference: {fileID: 719447209}
+    - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
+        type: 3}
+      propertyPath: horizontalAxis
+      value: Horizontal
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
+        type: 3}
+      propertyPath: verticalAxis
+      value: Vertical
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
+        type: 3}
+      propertyPath: whistleInput
+      value: Fire1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
+        type: 3}
+      propertyPath: baseShader
+      value: 
+      objectReference: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
+    - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
+        type: 3}
+      propertyPath: fadeShader.r
+      value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
+        type: 3}
+      propertyPath: fadeShader.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
+        type: 3}
+      propertyPath: fadeShader.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
+        type: 3}
+      propertyPath: fadeShader.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
+        type: 3}
+      propertyPath: fadeShader
+      value: 
+      objectReference: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
     - target: {fileID: 3100579446781588286, guid: b29a4eeca9d985c4a96d5f98e9128f17,
         type: 3}
       propertyPath: Loop
@@ -4694,7 +4649,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &560842476
 BoxCollider2D:
@@ -4736,7 +4691,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &576077157
 GameObject:
   m_ObjectHideFlags: 0
@@ -5063,7 +5019,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 586034255}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &586034259
 Camera:
   m_ObjectHideFlags: 0
@@ -5372,7 +5328,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &606075026
 BoxCollider2D:
@@ -5414,7 +5370,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &610192751
 GameObject:
   m_ObjectHideFlags: 0
@@ -5445,7 +5402,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 36
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &610192753
 BoxCollider2D:
@@ -5487,7 +5444,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &618654977
 GameObject:
   m_ObjectHideFlags: 0
@@ -5706,8 +5664,9 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 618654986}
     m_EventID: 186463275
-  m_CachedInstanceID: 43742
-  threat: {fileID: 719447202}
+  m_CachedInstanceID: 131742
+  threatPlayer1: {fileID: 719447202}
+  threatPlayer2: {fileID: 478936664}
   visionScript: {fileID: 652503525}
 --- !u!114 &618654986
 MonoBehaviour:
@@ -5732,13 +5691,14 @@ MonoBehaviour:
     m_EventID: 1869886699
   - m_Destination: {fileID: 618654990}
     m_EventID: 1302165058
-  m_CachedInstanceID: 43744
+  m_CachedInstanceID: 131744
   points:
   - {fileID: 999772225}
   - {fileID: 749810137}
   - {fileID: 2054760116}
   visionScript: {fileID: 652503525}
-  characterScript: {fileID: 719447205}
+  characterScriptPlayer1: {fileID: 719447205}
+  characterScriptPlayer2: {fileID: 478936670}
 --- !u!114 &618654987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5758,7 +5718,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: 43746
+  m_CachedInstanceID: 131746
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -5925,8 +5885,9 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 618654986}
     m_EventID: 186463275
-  m_CachedInstanceID: 43752
-  script: {fileID: 719447205}
+  m_CachedInstanceID: 131752
+  characterScriptPlayer1: {fileID: 719447205}
+  characterScriptPlayer2: {fileID: 478936670}
   changeState: 0
   alertSound: {fileID: 618654989}
 --- !u!1 &622290378
@@ -6260,7 +6221,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 27
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &651202958
 BoxCollider2D:
@@ -6302,7 +6263,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1001 &652503521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6716,7 +6678,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 40
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &701088733
 BoxCollider2D:
@@ -6758,7 +6720,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &704356398
 GameObject:
   m_ObjectHideFlags: 0
@@ -7420,7 +7383,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 24
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &762411016
 BoxCollider2D:
@@ -7462,7 +7425,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &765807767
 GameObject:
   m_ObjectHideFlags: 0
@@ -8080,6 +8044,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.000015258789
       objectReference: {fileID: 0}
+    - target: {fileID: 7478692876583778068, guid: 4292ac1f5e89f9b44af5b90bc778419c,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4796332345600174958, guid: 4292ac1f5e89f9b44af5b90bc778419c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8089,11 +8058,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7478692876583778068, guid: 4292ac1f5e89f9b44af5b90bc778419c,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2639354774571504062, guid: 4292ac1f5e89f9b44af5b90bc778419c,
         type: 3}
@@ -8410,7 +8374,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &849907361
 GameObject:
   m_ObjectHideFlags: 0
@@ -8441,7 +8406,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 28
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &849907363
 BoxCollider2D:
@@ -8483,7 +8448,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &862535490
 GameObject:
   m_ObjectHideFlags: 0
@@ -9064,7 +9030,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 32
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &933730025
 BoxCollider2D:
@@ -9106,7 +9072,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &938950822
 GameObject:
   m_ObjectHideFlags: 0
@@ -9155,8 +9122,9 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 938950825}
     m_EventID: 186463275
-  m_CachedInstanceID: 44010
-  script: {fileID: 719447205}
+  m_CachedInstanceID: 132018
+  characterScriptPlayer1: {fileID: 0}
+  characterScriptPlayer2: {fileID: 0}
   changeState: 0
   alertSound: {fileID: 0}
 --- !u!114 &938950824
@@ -9180,8 +9148,9 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 938950825}
     m_EventID: 186463275
-  m_CachedInstanceID: 44012
-  threat: {fileID: 719447202}
+  m_CachedInstanceID: 132020
+  threatPlayer1: {fileID: 0}
+  threatPlayer2: {fileID: 0}
   visionScript: {fileID: 2067291705}
 --- !u!114 &938950825
 MonoBehaviour:
@@ -9206,13 +9175,14 @@ MonoBehaviour:
     m_EventID: 1869886699
   - m_Destination: {fileID: 938950823}
     m_EventID: 1302165058
-  m_CachedInstanceID: 44014
+  m_CachedInstanceID: 132022
   points:
   - {fileID: 928212240}
   - {fileID: 1141416555}
   - {fileID: 1469798971}
   visionScript: {fileID: 2067291705}
-  characterScript: {fileID: 719447205}
+  characterScriptPlayer1: {fileID: 0}
+  characterScriptPlayer2: {fileID: 0}
 --- !u!114 &938950826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9232,7 +9202,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: 44016
+  m_CachedInstanceID: 132024
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -9481,7 +9451,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 34
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &940623423
 BoxCollider2D:
@@ -9523,7 +9493,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &943609816
 GameObject:
   m_ObjectHideFlags: 0
@@ -10147,7 +10118,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1028148085
 BoxCollider2D:
@@ -10189,7 +10160,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &1031683557
 GameObject:
   m_ObjectHideFlags: 0
@@ -10872,7 +10844,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1146825040
 BoxCollider2D:
@@ -10914,7 +10886,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &1153442483
 GameObject:
   m_ObjectHideFlags: 0
@@ -11059,7 +11032,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 37
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1157709072
 BoxCollider2D:
@@ -11101,7 +11074,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &1158391799
 GameObject:
   m_ObjectHideFlags: 0
@@ -11132,7 +11106,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1158391801
 BoxCollider2D:
@@ -11147,7 +11121,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.09281179, y: -0.33691084}
+  m_Offset: {x: -0.25296155, y: -0.33691084}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -11158,7 +11132,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2588496, y: 0.31786275}
+  m_Size: {x: 0.9385502, y: 0.31786275}
   m_EdgeRadius: 0
 --- !u!114 &1158391802
 MonoBehaviour:
@@ -11174,7 +11148,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &1162147694
 GameObject:
   m_ObjectHideFlags: 0
@@ -11499,7 +11474,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1208514769
 BoxCollider2D:
@@ -11541,7 +11516,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &1228020325
 GameObject:
   m_ObjectHideFlags: 0
@@ -11605,7 +11581,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 30
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1232115303
 BoxCollider2D:
@@ -11647,7 +11623,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &1257270627
 GameObject:
   m_ObjectHideFlags: 0
@@ -11735,7 +11712,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1283681599
 BoxCollider2D:
@@ -11777,7 +11754,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &1293622798
 GameObject:
   m_ObjectHideFlags: 0
@@ -12059,7 +12037,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3, y: -1.51}
+  m_AnchoredPosition: {x: -3, y: -1.5100098}
   m_SizeDelta: {x: -1913.5, y: 8.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1380537966
@@ -12172,7 +12150,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &1403771283
 GameObject:
   m_ObjectHideFlags: 0
@@ -12374,7 +12353,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1425977597
 BoxCollider2D:
@@ -12389,7 +12368,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.74506736, y: -0.33360016}
+  m_Offset: {x: 0.6990509, y: -0.33360016}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -12400,7 +12379,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.1965184, y: 0.3112414}
+  m_Size: {x: 5.466529, y: 0.3112414}
   m_EdgeRadius: 0
 --- !u!114 &1425977598
 MonoBehaviour:
@@ -12416,7 +12395,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &1431465800
 GameObject:
   m_ObjectHideFlags: 0
@@ -12863,7 +12843,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 33
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1505929795
 BoxCollider2D:
@@ -12905,7 +12885,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &1510550364
 GameObject:
   m_ObjectHideFlags: 0
@@ -13285,7 +13266,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &1564392677
 GameObject:
   m_ObjectHideFlags: 0
@@ -13586,7 +13568,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &1621262706
 GameObject:
   m_ObjectHideFlags: 0
@@ -13773,7 +13756,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &1633826207
 GameObject:
   m_ObjectHideFlags: 0
@@ -14113,7 +14097,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 29
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1691726047
 BoxCollider2D:
@@ -14155,7 +14139,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &1720440138
 GameObject:
   m_ObjectHideFlags: 0
@@ -15627,7 +15612,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 39
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1941053674
 BoxCollider2D:
@@ -15669,7 +15654,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &1984595097
 GameObject:
   m_ObjectHideFlags: 0
@@ -15962,7 +15948,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 35
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2027864794
 BoxCollider2D:
@@ -16004,7 +15990,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &2036034014
 GameObject:
   m_ObjectHideFlags: 0
@@ -16179,7 +16166,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 23
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2056268919
 BoxCollider2D:
@@ -16221,7 +16208,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &2061151025
 GameObject:
   m_ObjectHideFlags: 0
@@ -16792,7 +16780,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2136273883}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2111216669
 BoxCollider2D:
@@ -16807,7 +16795,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.0238624, y: -0.33360016}
+  m_Offset: {x: -2.1809523, y: -0.33360016}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -16818,7 +16806,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.7686415, y: 0.3112414}
+  m_Size: {x: 5.4544616, y: 0.3112414}
   m_EdgeRadius: 0
 --- !u!114 &2111216670
 MonoBehaviour:
@@ -16834,7 +16822,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseShader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   fadeShader: {fileID: 4800000, guid: 1e3b057af24249748ff873be7fafee47, type: 3}
-  player: {fileID: 719447202}
+  player1: {fileID: 719447202}
+  player2: {fileID: 478936664}
 --- !u!1 &2136273882
 GameObject:
   m_ObjectHideFlags: 0
@@ -16868,7 +16857,6 @@ Transform:
   - {fileID: 844885475}
   - {fileID: 1395561134}
   - {fileID: 1630187032}
-  - {fileID: 308778536}
   - {fileID: 1425977596}
   - {fileID: 2111216668}
   - {fileID: 48481375}
@@ -16882,7 +16870,6 @@ Transform:
   - {fileID: 1283681598}
   - {fileID: 1208514768}
   - {fileID: 560842475}
-  - {fileID: 429462113}
   - {fileID: 7834519}
   - {fileID: 217623203}
   - {fileID: 2056268918}
