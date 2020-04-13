@@ -70,15 +70,15 @@ public class CharacterController : MonoBehaviour
         }
     }
 
-    void OnWhistleEnter(Collider2D other)
-    {
+    //void OnWhistleEnter(Collider2D other)
+    //{
         
-        threat = other.gameObject;
+    //    threat = other.gameObject;
 
-    }
-    void OnWhistleExit(Collider2D other)
-    {
-        threat = null;
-    }
+    //}
+    //void OnWhistleExit(Collider2D other)
+    //{
+    //    threat = null;
+    //}
 
 }

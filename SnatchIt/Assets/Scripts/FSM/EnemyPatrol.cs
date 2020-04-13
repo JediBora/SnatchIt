@@ -37,7 +37,7 @@ public class EnemyPatrol : StateBehaviour
     {
         if (!agent.pathPending && agent.remainingDistance < 0.5f)
             GotoNextPoint();
-        if(visionScript.visibleObjects.Count > 0) 
+        if(visionScript.objectsInVolume.Count > 0) 
         {
             SendEvent("Chase");
         }

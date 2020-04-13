@@ -28,6 +28,7 @@ public class EnemyChase : StateBehaviour
         agent.destination = threat.transform.position;
         if (visionScript.visibleObjects.Count == 0) 
         {
+            
             SendEvent("Patrol");
         }
     }

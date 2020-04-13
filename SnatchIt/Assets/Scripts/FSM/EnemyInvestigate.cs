@@ -31,17 +31,21 @@ public class EnemyInvestigate : StateBehaviour
     void Update()
     {
 
-
-        if (script.whistles.Count > 0)
+        print(script.whistles.Count);
+        if(script.whistles.Count > 0)
         {
             agent.destination = GameObject.Find("WhistleLocation(Clone)").transform.position;
-            //cript.whistles.Remove(script.whistle);
-            //Destroy(GameObject.Find("WhistleLocation(Clone)"),4f);
 
         }
+        
+        //cript.whistles.Remove(script.whistle);
+        //Destroy(GameObject.Find("WhistleLocation(Clone)"),4f);
+
+
 
         if (script.whistles.Count == 0)
         {
+            print("s");
             SendEvent("Patrol");
 
         }
@@ -65,9 +69,10 @@ public class EnemyInvestigate : StateBehaviour
             // script.whistles.Remove(script.whistle);
             // LostSight();
             alertSound.Play();
+            script.whistles.Clear();
             Destroy(GameObject.Find("WhistleLocation(Clone)"));
             changeState = true;
-            print("test");
+          
 
 
 

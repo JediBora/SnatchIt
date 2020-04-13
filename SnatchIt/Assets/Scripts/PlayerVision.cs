@@ -15,7 +15,7 @@ public class PlayerVision : MonoBehaviour
         {
             enemySeen = true;
             print("enemy see");
-            owner.SendMessage("OnWhistleEnter", other);
+            //owner.SendMessage("OnWhistleEnter", other);
         }
     }
 
@@ -26,7 +26,7 @@ public class PlayerVision : MonoBehaviour
             enemySeen = false;
           
             print("enemy exit");
-            owner.SendMessage("OnWhistleExit", other);
+            //owner.SendMessage("OnWhistleExit", other);
         }
     }
     //private void Update()
