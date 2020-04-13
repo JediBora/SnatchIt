@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -6360,7 +6360,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 618654986}
     m_EventID: 186463275
-  m_CachedInstanceID: 193980
+  m_CachedInstanceID: 21350
   threatPlayer1: {fileID: 719447202}
   threatPlayer2: {fileID: 478936664}
   visionScript: {fileID: 652503525}
@@ -6387,7 +6387,7 @@ MonoBehaviour:
     m_EventID: 1869886699
   - m_Destination: {fileID: 618654990}
     m_EventID: 1302165058
-  m_CachedInstanceID: 193982
+  m_CachedInstanceID: 21352
   points:
   - {fileID: 999772225}
   - {fileID: 749810137}
@@ -6416,7 +6416,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: 193984
+  m_CachedInstanceID: 21354
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -6584,7 +6584,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 618654986}
     m_EventID: 186463275
-  m_CachedInstanceID: 193990
+  m_CachedInstanceID: 21360
   characterScriptPlayer1: {fileID: 719447205}
   characterScriptPlayer2: {fileID: 478936670}
   changeState: 0
@@ -6735,7 +6735,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
+  m_SubmitButton: Confirm
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
@@ -7049,6 +7049,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11469114, guid: 3464ac11686f806428c3048c02d66b5d, type: 3}
+      propertyPath: owner
+      value: 
+      objectReference: {fileID: 618654977}
+    - target: {fileID: 11469114, guid: 3464ac11686f806428c3048c02d66b5d, type: 3}
+      propertyPath: threatTag
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 431866, guid: 3464ac11686f806428c3048c02d66b5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7092,14 +7100,6 @@ PrefabInstance:
     - target: {fileID: 431866, guid: 3464ac11686f806428c3048c02d66b5d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11469114, guid: 3464ac11686f806428c3048c02d66b5d, type: 3}
-      propertyPath: owner
-      value: 
-      objectReference: {fileID: 618654977}
-    - target: {fileID: 11469114, guid: 3464ac11686f806428c3048c02d66b5d, type: 3}
-      propertyPath: threatTag
-      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6489332, guid: 3464ac11686f806428c3048c02d66b5d, type: 3}
@@ -8919,6 +8919,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.000015258789
       objectReference: {fileID: 0}
+    - target: {fileID: 673267992277076002, guid: 4292ac1f5e89f9b44af5b90bc778419c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 7478692876583778068, guid: 4292ac1f5e89f9b44af5b90bc778419c,
         type: 3}
       propertyPath: m_SortingOrder
@@ -8945,11 +8950,6 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2639354774571504062, guid: 4292ac1f5e89f9b44af5b90bc778419c,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-    - target: {fileID: 673267992277076002, guid: 4292ac1f5e89f9b44af5b90bc778419c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -14843,7 +14843,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 1646713796}
     m_EventID: 186463275
-  m_CachedInstanceID: -359292
+  m_CachedInstanceID: 22098
   characterScriptPlayer1: {fileID: 719447205}
   characterScriptPlayer2: {fileID: 478936670}
   changeState: 0
@@ -14869,7 +14869,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 1646713796}
     m_EventID: 186463275
-  m_CachedInstanceID: -359282
+  m_CachedInstanceID: 22100
   threatPlayer1: {fileID: 719447202}
   threatPlayer2: {fileID: 478936664}
   visionScript: {fileID: 363864795}
@@ -14896,7 +14896,7 @@ MonoBehaviour:
     m_EventID: 1869886699
   - m_Destination: {fileID: 1646713794}
     m_EventID: 1302165058
-  m_CachedInstanceID: -359284
+  m_CachedInstanceID: 22102
   points:
   - {fileID: 1932615390}
   - {fileID: 928212240}
@@ -14926,7 +14926,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: -359286
+  m_CachedInstanceID: 22104
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -15486,6 +15486,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11469114, guid: 3464ac11686f806428c3048c02d66b5d, type: 3}
+      propertyPath: owner
+      value: 
+      objectReference: {fileID: 1646713792}
+    - target: {fileID: 11469114, guid: 3464ac11686f806428c3048c02d66b5d, type: 3}
+      propertyPath: threatTag
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 431866, guid: 3464ac11686f806428c3048c02d66b5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -15529,14 +15537,6 @@ PrefabInstance:
     - target: {fileID: 431866, guid: 3464ac11686f806428c3048c02d66b5d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11469114, guid: 3464ac11686f806428c3048c02d66b5d, type: 3}
-      propertyPath: owner
-      value: 
-      objectReference: {fileID: 1646713792}
-    - target: {fileID: 11469114, guid: 3464ac11686f806428c3048c02d66b5d, type: 3}
-      propertyPath: threatTag
-      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6489332, guid: 3464ac11686f806428c3048c02d66b5d, type: 3}
