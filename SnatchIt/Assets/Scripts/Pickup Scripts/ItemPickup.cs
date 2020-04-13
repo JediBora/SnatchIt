@@ -39,4 +39,13 @@ public class ItemPickup : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Enemy"))
+        {
+            Debug.Log("Works");
+            moneyAmount = moneyAmount - 10;
+        }
+    }
 }
