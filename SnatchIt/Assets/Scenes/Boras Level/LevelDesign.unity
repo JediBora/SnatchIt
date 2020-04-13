@@ -2918,7 +2918,7 @@ PrefabInstance:
     - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
         type: 3}
       propertyPath: whistleInput
-      value: Fire2
+      value: Player2Whistle
       objectReference: {fileID: 0}
     - target: {fileID: 3100579446781588280, guid: b29a4eeca9d985c4a96d5f98e9128f17,
         type: 3}
@@ -6347,7 +6347,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 618654986}
     m_EventID: 186463275
-  m_CachedInstanceID: 21350
+  m_CachedInstanceID: 78484
   threatPlayer1: {fileID: 719447202}
   threatPlayer2: {fileID: 478936664}
   visionScript: {fileID: 652503525}
@@ -6374,7 +6374,7 @@ MonoBehaviour:
     m_EventID: 1869886699
   - m_Destination: {fileID: 618654990}
     m_EventID: 1302165058
-  m_CachedInstanceID: 21352
+  m_CachedInstanceID: 78486
   points:
   - {fileID: 999772225}
   - {fileID: 749810137}
@@ -6403,7 +6403,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: 21354
+  m_CachedInstanceID: 78488
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -6571,7 +6571,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 618654986}
     m_EventID: 186463275
-  m_CachedInstanceID: 21360
+  m_CachedInstanceID: 78494
   characterScriptPlayer1: {fileID: 719447205}
   characterScriptPlayer2: {fileID: 478936670}
   changeState: 0
@@ -14732,7 +14732,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 1646713796}
     m_EventID: 186463275
-  m_CachedInstanceID: 22098
+  m_CachedInstanceID: 79230
   characterScriptPlayer1: {fileID: 719447205}
   characterScriptPlayer2: {fileID: 478936670}
   changeState: 0
@@ -14758,7 +14758,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 1646713796}
     m_EventID: 186463275
-  m_CachedInstanceID: 22100
+  m_CachedInstanceID: 79232
   threatPlayer1: {fileID: 719447202}
   threatPlayer2: {fileID: 478936664}
   visionScript: {fileID: 363864795}
@@ -14785,7 +14785,7 @@ MonoBehaviour:
     m_EventID: 1869886699
   - m_Destination: {fileID: 1646713794}
     m_EventID: 1302165058
-  m_CachedInstanceID: 22102
+  m_CachedInstanceID: 79234
   points:
   - {fileID: 1932615390}
   - {fileID: 928212240}
@@ -14815,7 +14815,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: 22104
+  m_CachedInstanceID: 79236
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}

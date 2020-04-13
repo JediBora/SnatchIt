@@ -182,7 +182,7 @@ InputManager:
     axis: 1
     joyNum: 2
   - serializedVersion: 3
-    m_Name: Fire1
+    m_Name: Player1Whistle
     descriptiveName: P1_Xbox_RTrigger
     descriptiveNegativeName: 
     negativeButton: 
@@ -198,7 +198,7 @@ InputManager:
     axis: 2
     joyNum: 1
   - serializedVersion: 3
-    m_Name: Fire2
+    m_Name: Player2Whsitle
     descriptiveName: P2_Xbox_RTrigger
     descriptiveNegativeName: 
     negativeButton: 

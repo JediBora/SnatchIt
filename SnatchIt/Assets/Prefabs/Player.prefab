@@ -152,7 +152,7 @@ MonoBehaviour:
   vision: {fileID: 0}
   horizontalAxis: Horizontal
   verticalAxis: Vertical
-  whistleInput: Fire1
+  whistleInput: Player1Whistle
   baseShader: {fileID: 0}
 --- !u!82 &3100579446781588286
 AudioSource:
