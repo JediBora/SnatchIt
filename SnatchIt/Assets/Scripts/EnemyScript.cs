@@ -29,6 +29,7 @@ public class EnemyScript : MonoBehaviour
     public Text itemPickupText1;
     public ItemPickup itemPickupScript; 
     public ItemPickup itemPickupScript1;
+    public AudioSource playerCaught;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +46,7 @@ public class EnemyScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            playerCaught.Play();
             player1Canvas.SetActive(true);
             player1.enabled = false;
             player1Caught = true;
@@ -53,6 +55,7 @@ public class EnemyScript : MonoBehaviour
         }
         if (collision.gameObject.tag == "Player2")
         {
+            playerCaught.Play();
             player2Canvas.SetActive(true);
             player2.enabled = false;
             player2Caught = true;
