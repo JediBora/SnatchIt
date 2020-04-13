@@ -7,16 +7,19 @@ public class ItemPickup : MonoBehaviour
 {
     [SerializeField]
 
-    private Text itemCounter;
+    public Text itemCounter;
 
     private int collidedItemValue;
     public AudioSource source3;
-    private int moneyAmount;
+    public int moneyAmount = 0;
     public string grabInput;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        moneyAmount = 0;
+
+        //moneyAmount = 0;
     }
 
     // Update is called once per frame
