@@ -45,7 +45,7 @@ public class ItemPickup : MonoBehaviour
         if (collision.gameObject.tag.Equals("Enemy"))
         {
             Debug.Log("Works");
-            moneyAmount = moneyAmount - 10;
+            moneyAmount = moneyAmount - 1000;
         }
     }
 }

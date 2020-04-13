@@ -15,6 +15,8 @@ public class CountdownTimer : MonoBehaviour
 
     public GameObject gameOverMenuUI;
 
+    public GameObject splitScreenLine;
+
 
     private void Awake()
     {
@@ -38,6 +40,8 @@ public class CountdownTimer : MonoBehaviour
             Time.timeScale = 0f;
 
             GameIsOver = true;
+
+            splitScreenLine.SetActive(false);
         }
 
         if (currentTime >= 10f) { countdownText.color = Color.green; }
