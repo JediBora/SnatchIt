@@ -22,7 +22,7 @@ public class ItemPickup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        itemCounter.text = "Money: " + moneyAmount;
+        itemCounter.text = "$" + moneyAmount;
     }
 
     private void OnCollisionStay2D(Collision2D collision)
